@@ -1,0 +1,39 @@
+:host {
+  flex-grow: 10;
+}
+
+.main-content {
+  height: 100%;
+}
+
+
+.svg-content {
+
+    background-color: #0C2D48; /* Assigne colour to the background */
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+}
+
+
+.context-menu {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background-image: 
+    radial-gradient(ellipse at top, #0C2D48, transparent),
+    radial-gradient(ellipse at bottom, #f2380eae, transparent);
+    border: 1px solid #938989;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .context-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  
+  

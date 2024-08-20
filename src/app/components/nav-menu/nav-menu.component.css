@@ -1,0 +1,52 @@
+:host {
+    flex-grow: 0;
+}
+
+.intro {
+    color: #F8EECD;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 0.3rem;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 0 0 10px rgba(214, 241, 7, 0.5);
+    justify-self: center;
+    
+  }
+  
+  .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      background-image: 
+        radial-gradient(ellipse at top, #0C2D48, transparent),
+        radial-gradient(ellipse at bottom, #f2380eae, transparent);
+      box-shadow:  5px 5px 3px 2px rgba(0, 0, 0, 0.208);
+      padding: 0;
+  }
+
+  .menu-group {
+    flex: 1;
+  }
+  
+  .menu  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+      display: flex;
+  }
+  
+  .btn {
+    margin: 1rem;
+    padding: 0;
+    text-align: center;
+    color: #ccc;
+    text-shadow: 0 0 3px rgba(248, 238, 205, 1);
+    transition: shadow 0.5s ease, color 0.5s ease;
+     }
+  
+     
+  .btn:hover {
+     color: #f8eecd;
+     text-shadow: 0 0 3px rgba(248, 238, 205, 1);
+  } 

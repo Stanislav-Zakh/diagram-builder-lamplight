@@ -1,0 +1,120 @@
+<div id="context-menu" class="context-menu">
+    <ul>
+    </ul>
+</div>
+<div class="main-content" #content>
+    <svg class="svg-content" #board>
+        <style>
+            /* Style Node */
+
+            .selected {
+                fill: #fae396;
+                stroke-width: 0.1rem;
+            }
+
+            /* Style Node Controls */
+
+            .control {
+                opacity: 0;
+                transition: opacity 0.5s ease;
+            }
+
+            .controls:hover>.control {
+                opacity: 0.5;
+            }
+
+            /* Style Text Node */
+
+            .heavy-text {
+                fill: white;
+                font: bold 18px sans-serif;
+            }
+
+            .text-edit {
+                background: transparent;
+            }
+
+            /* Style Context Menu */
+
+            .context-li {
+                color: #f0e2e2;
+                text-shadow: 0 0 3px rgba(248, 238, 205, 1);
+                padding: 8px 12px;
+                cursor: pointer;
+                transition: shadow 0.5s ease, color 0.5s ease;
+            }
+
+            .context-li:hover {
+                color: #fae396;
+                text-shadow: 0 0 3px rgba(248, 238, 205, 1);
+            }
+
+            select {
+                background-color: transparent;
+            }
+
+            /* Style range inputs */
+            input[type="range"] {
+                -webkit-appearance: none;
+                outline-color: #0C2D48;
+                border-color: #0C2D48;
+                background-color: transparent;
+            }
+
+            input[type="color"] {
+                background: none;
+                border-color: transparent;
+            }
+
+            /* Style Link Controls */
+
+            .link-control {
+                opacity: 0;
+                transition: opacity 0.5s ease;
+            }
+
+            g:hover>.link-control {
+                opacity: 0.5
+            }
+
+            /* Style Node Selection Menu */
+
+            .menu-control {
+                transform: translateY(50vh);
+            }
+
+            .menu-popup {
+                transform: translate(10%, 50vh);
+            }
+
+            .menu-control-back {
+                fill: white;
+                opacity: 0.8;
+                r: 1.5rem;
+            }
+
+            .selector-text {
+                fill: #F8EECD;
+                transition: fill 0.5s ease;
+            }
+
+            .selector-text:hover {
+                fill: yellow;
+            }
+        </style>
+        <defs>
+            <linearGradient id="myGradient">
+                <stop offset="0%" style="stop-color:#0C2D48;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#864B26;stop-opacity:0.84" />
+                <stop offset="100%" style="stop-color:#f2380e;stop-opacity:0.68" />
+            </linearGradient>
+        </defs>
+        <!--
+        <foreignObject x="80" y="20" width="160" height="160">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <textarea class="text-node"></textarea>
+             </div>
+        </foreignObject>
+        -->
+    </svg>
+</div>
